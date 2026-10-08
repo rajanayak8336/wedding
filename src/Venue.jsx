@@ -92,6 +92,7 @@ export default function Venue() {
             The
             <br />
             <strong>Dharavath &amp; Tandel</strong>
+            <br />Families
           </h3>
 
           <p>
