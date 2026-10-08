@@ -83,7 +83,7 @@ export default function Couple() {
         </div>
 
         <p className="couple-quote">
-          “Together is a beautiful place to be.”
+          Together is a beautiful place to be.
         </p>
 
         <div className="bottom-divider">

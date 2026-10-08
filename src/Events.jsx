@@ -56,7 +56,7 @@ export default function Events() {
       <div className="events-header">
 
         <span className="events-small-title">
-          OUR CELEBRATION
+          Our Celebrations
         </span>
 
         <p>

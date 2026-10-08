@@ -15,7 +15,10 @@
   width: min(100%, 700px);
 }
 
-/* Make every element inside Venue use Georgia */
+/* =========================================================
+   DEFAULT VENUE FONT
+========================================================= */
+
 .venue-section,
 .venue-section *,
 .venue-section button,
@@ -24,6 +27,10 @@
 .venue-section textarea {
   font-family: Georgia, "Times New Roman", serif;
 }
+
+/* =========================================================
+   VENUE DETAILS
+========================================================= */
 
 .venue-details {
   margin-top: 25px;
@@ -38,73 +45,167 @@
   font-size: 15px;
 }
 
-/* Map directions button */
+/* =========================================================
+   MAP DIRECTIONS BUTTON
+========================================================= */
 
 .direction-button {
   display: inline-flex;
   align-items: center;
   justify-content: center;
   gap: 10px;
+
   margin-top: 20px;
   padding: 12px 22px;
+
   border: 1px solid var(--brown);
   background: var(--brown);
   color: white;
+
   text-decoration: none;
   font-size: 13px;
-  transition: 0.3s;
+
+  transition:
+    background 0.3s ease,
+    color 0.3s ease,
+    transform 0.3s ease;
 }
 
 .direction-button:hover {
   background: transparent;
   color: var(--brown);
+  transform: translateY(-2px);
 }
 
-/* Countdown */
+.direction-button span {
+  font-size: 16px;
+}
+
+/* =========================================================
+   COUNTDOWN
+   Elegant Wedding Font
+========================================================= */
 
 .countdown-panel {
   max-width: 550px;
   margin: 35px auto;
-  padding: 23px 15px;
+  padding: 25px 15px;
+
   border-top: 1px solid var(--border);
   border-bottom: 1px solid var(--border);
+
+  /*
+     Elegant serif font for countdown.
+     This gives a premium wedding invitation look.
+  */
+  font-family: "Cormorant Garamond", Georgia, serif;
 }
 
-.countdown-panel > p {
-  font-size: 10px;
-  letter-spacing: 3px;
+/* Countdown font override */
+
+.countdown-panel,
+.countdown-panel *,
+.countdown-panel strong,
+.countdown-panel span,
+.countdown-panel small {
+  font-family: "Cormorant Garamond", Georgia, serif;
 }
+
+/* =========================================================
+   COUNTDOWN TITLE
+========================================================= */
+
+.countdown-panel > p {
+  margin: 0;
+
+  font-family: "Cormorant Garamond", Georgia, serif;
+
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+
+  line-height: 1.4;
+}
+
+/* =========================================================
+   COUNTDOWN GRID
+========================================================= */
 
 .countdown-grid {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   gap: 10px;
-  margin: 18px 0;
+
+  margin: 20px 0;
 }
+
+/* =========================================================
+   COUNTDOWN ITEM
+========================================================= */
 
 .countdown-item {
   display: flex;
   flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
   gap: 5px;
+
+  font-family: "Cormorant Garamond", Georgia, serif;
 }
+
+/* =========================================================
+   COUNTDOWN NUMBERS
+========================================================= */
 
 .countdown-item strong {
-  font-size: 29px;
-  font-weight: 400;
-}
+  font-family: "Cormorant Garamond", Georgia, serif;
 
-.countdown-item span {
-  font-size: 10px;
-  text-transform: uppercase;
+  font-size: 38px;
+  font-weight: 500;
+
+  line-height: 1;
+
   letter-spacing: 1px;
 }
 
-.countdown-panel small {
-  font-size: 11px;
-  opacity: 0.75;
+/* =========================================================
+   COUNTDOWN LABELS
+========================================================= */
+
+.countdown-item span {
+  font-family: "Cormorant Garamond", Georgia, serif;
+
+  font-size: 13px;
+  font-weight: 600;
+
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+
+  line-height: 1;
 }
 
-/* Closing thank-you message */
+/* =========================================================
+   WEDDING DATE / TIME
+========================================================= */
+
+.countdown-panel small {
+  display: block;
+
+  font-family: "Cormorant Garamond", Georgia, serif;
+
+  font-size: 13px;
+  font-weight: 500;
+
+  letter-spacing: 0.8px;
+
+  opacity: 0.8;
+}
+
+/* =========================================================
+   WARM REGARDS
+========================================================= */
 
 .warm-regards {
   margin-top: 45px;
@@ -117,8 +218,10 @@
 
 .warm-regards h3 {
   font-size: clamp(30px, 5vw, 42px);
+
   font-weight: 400;
   font-style: italic;
+
   margin: 16px 0;
 }
 
@@ -147,24 +250,87 @@
     font-size: 21px;
   }
 
-  .countdown-grid {
-    gap: 4px;
-  }
+  /* Countdown */
 
-  .countdown-item strong {
-    font-size: 23px;
-  }
-
-  .countdown-item span {
-    font-size: 9px;
+  .countdown-panel {
+    margin: 30px auto;
+    padding: 22px 8px;
   }
 
   .countdown-panel > p {
-    font-size: 9px;
+    font-size: 10px;
     letter-spacing: 2px;
+  }
+
+  .countdown-grid {
+    gap: 4px;
+    margin: 18px 0;
+  }
+
+  .countdown-item {
+    gap: 6px;
+  }
+
+  .countdown-item strong {
+    font-size: 30px;
+    letter-spacing: 0.5px;
+  }
+
+  .countdown-item span {
+    font-size: 11px;
+    letter-spacing: 1px;
+  }
+
+  .countdown-panel small {
+    font-size: 11px;
+    letter-spacing: 0.5px;
+  }
+
+  /* Family message */
+
+  .warm-regards {
+    margin-top: 40px;
   }
 
   .warm-regards p {
     font-size: 13px;
+    line-height: 1.7;
+  }
+}
+
+/* =========================================================
+   VERY SMALL MOBILE
+========================================================= */
+
+@media (max-width: 360px) {
+
+  .venue-section {
+    padding: 60px 14px;
+  }
+
+  .countdown-panel {
+    padding: 20px 5px;
+  }
+
+  .countdown-grid {
+    gap: 2px;
+  }
+
+  .countdown-item strong {
+    font-size: 27px;
+  }
+
+  .countdown-item span {
+    font-size: 9px;
+    letter-spacing: 0.7px;
+  }
+
+  .countdown-panel > p {
+    font-size: 9px;
+    letter-spacing: 1.5px;
+  }
+
+  .countdown-panel small {
+    font-size: 10px;
   }
 }

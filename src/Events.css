@@ -35,23 +35,25 @@
   width: min(100%, 700px);
 
   margin: 0 auto 80px;
+  
 
   text-align: center;
 }
 
-.events-small-title {
+
+ .events-small-title {
+  margin: 0;
+  color: #4a2b17;
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: clamp(42px, 7vw, 84px);
+  font-weight: 500;
+  font-style: italic;
+  line-height: 0.98;
   display: block;
-
-  margin-bottom: 12px;
-
-  font-size: 11px;
-
-  letter-spacing: 4px;
-
-  text-transform: uppercase;
-
-  color: #9a7742;
+  letter-spacing: 0;
+  text-transform: none;
 }
+
 
 .events-header p {
   margin: 18px auto 0;
@@ -439,6 +441,7 @@
 
   .events-small-title {
     font-size: 30px;
+    font-size: clamp(38px, 8vw, 60px);
 
     letter-spacing: 1px;
   }
@@ -610,6 +613,10 @@
     gap: 20px;
   }
 
+  .events-small-title {
+    font-size: clamp(35px, 9vw, 48px);
+  }
+
   .event-image {
     width: 100%;
 
@@ -659,6 +666,10 @@
   .event-quote {
     font-size: 11px;
   }
+
+  .events-small-title {
+    font-size: 35px;
+  }
 }
 
 
@@ -676,3 +687,5 @@
     transition: none;
   }
 }
+
+

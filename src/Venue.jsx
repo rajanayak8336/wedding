@@ -89,21 +89,25 @@ export default function Venue() {
           <span>WITH LOVE AND BLESSINGS</span>
 
           <h3>
-            Families of
+            The
             <br />
-            <strong>Dharvath &amp; Tandel</strong>
+            <strong>Dharavath &amp; Tandel</strong>
           </h3>
 
           <p>
-            With the love and blessings of our families,
+            Two hearts, two families, and one beautiful journey.
             <br />
-            we joyfully invite you to be a part of
+            with the love and blessings of our families,
             <br />
-            this beautiful celebration of love and togetherness.
+            we invite you to be a part of the moments
             <br />
-            Your presence and blessings will make our special day
+            that will become memories for a lifetime.
             <br />
-            even more memorable.
+            <br />
+            -------♥︎-------
+            <br />
+            <br />
+            Your presence will make our celebration complete.
           </p>
         </div>
 
