@@ -1,0 +1,56 @@
+
+/* MAIN WEBSITE COLORS AND PAGE SETTINGS */
+:root {
+  --cream: #f5ead9;
+  --cream-light: #fff8ed;
+  --brown: #634331;
+  --gold: #a58153;
+  --text: #4d3529;
+  --border: #a68a68;
+}
+
+.app {
+  width: 100%;
+  min-height: 100vh;
+  overflow-x: clip;
+  background: var(--cream);
+  color: var(--text);
+}
+
+.wedding-content {
+  width: 100%;
+  animation: pageFade 1s ease both;
+}
+
+@keyframes pageFade {
+  from {
+    opacity: 0;
+    transform: translateY(15px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Apply smooth transitions to interactive elements. */
+button,
+a {
+  -webkit-tap-highlight-color: transparent;
+}
+
+button {
+  font-family: inherit;
+}
+
+/* Respect reduced-motion accessibility settings. */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}

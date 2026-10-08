@@ -1,0 +1,248 @@
+/* MEMORIES SECTION */
+
+.memories {
+  width: 100%;
+  padding: 90px 20px 60px;
+  background: #eee0cc;
+  text-align: center;
+  box-sizing: border-box;
+  overflow: hidden;
+}
+
+/* VIDEO GRID */
+
+.memories-grid {
+  width: min(100%, 1250px);
+  margin: 50px auto 0;
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 28px;
+  align-items: start;
+}
+
+/* VIDEO CARD */
+
+.memory-card {
+  width: 100%;
+  min-width: 0;
+}
+
+/* VIDEO FRAME - NO VISIBLE FRAME */
+
+.memory-frame {
+  width: 100%;
+  padding: 0;
+  margin: 0;
+  background: transparent;
+  border: none;
+  box-shadow: none;
+  box-sizing: border-box;
+  overflow: hidden;
+}
+
+/* VIDEO */
+
+.memory-frame video {
+  display: block;
+  width: 100%;
+  height: 300px;
+  margin: 0;
+  padding: 0;
+  object-fit: cover;
+  object-position: center;
+  background: transparent;
+  border: none;
+  outline: none;
+  box-shadow: none;
+}
+
+/* MEMORY LABEL */
+
+.memory-card > p {
+  font-size: 11px;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  margin: 14px 0 0;
+}
+
+/* FINAL THANK-YOU MESSAGE */
+
+.memories-footer {
+  margin-top: 75px;
+}
+
+.memories-footer > div {
+  color: var(--gold);
+  margin-bottom: 18px;
+}
+
+.memories-footer > p {
+  font-size: 18px;
+  line-height: 1.8;
+  font-style: italic;
+}
+
+.memories-footer h3 {
+  font-size: 32px;
+  font-weight: 400;
+  font-style: italic;
+  margin: 18px 0 10px;
+}
+
+.memories-footer > span {
+  font-size: 11px;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+}
+
+/* LARGE TABLETS / SMALL LAPTOPS */
+
+@media (max-width: 1000px) {
+  .memories {
+    padding-left: 18px;
+    padding-right: 18px;
+  }
+
+  .memories-grid {
+    width: min(100%, 900px);
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 24px;
+  }
+
+  .memory-frame video {
+    height: 280px;
+  }
+}
+
+/* TABLETS */
+
+@media (max-width: 700px) {
+  .memories {
+    padding: 75px 16px 50px;
+  }
+
+  .memories-grid {
+    width: min(100%, 600px);
+    grid-template-columns: 1fr;
+    gap: 32px;
+    margin-top: 38px;
+  }
+
+  .memory-card {
+    width: 100%;
+  }
+
+  .memory-frame {
+    width: 100%;
+    padding: 0;
+  }
+
+  .memory-frame video {
+    width: 100%;
+    height: 330px;
+    object-fit: cover;
+  }
+
+  .memory-card > p {
+    margin-top: 12px;
+  }
+
+  .memories-footer {
+    margin-top: 60px;
+  }
+}
+
+/* MOBILE */
+
+@media (max-width: 480px) {
+  .memories {
+    padding: 65px 14px 45px;
+  }
+
+  .memories-grid {
+    width: 100%;
+    max-width: 430px;
+    margin-top: 32px;
+    gap: 28px;
+  }
+
+  .memory-frame {
+    width: 100%;
+    padding: 0;
+    border-radius: 0;
+  }
+
+  .memory-frame video {
+    width: 100%;
+    height: 260px;
+    object-fit: cover;
+    object-position: center;
+  }
+
+  .memory-card > p {
+    font-size: 10px;
+    letter-spacing: 2.5px;
+    margin-top: 11px;
+  }
+
+  .memories-footer {
+    margin-top: 55px;
+  }
+
+  .memories-footer > p {
+    font-size: 18px;
+    line-height: 1.7;
+  }
+
+  .memories-footer h3 {
+    font-size: 26px;
+    margin-top: 16px;
+  }
+
+  .memories-footer > span {
+    font-size: 9px;
+    letter-spacing: 2px;
+  }
+}
+
+/* SMALL MOBILE */
+
+@media (max-width: 380px) {
+  .memories {
+    padding-left: 12px;
+    padding-right: 12px;
+  }
+
+  .memories-grid {
+    gap: 25px;
+  }
+
+  .memory-frame {
+    padding: 0;
+  }
+
+  .memory-frame video {
+    height: 230px;
+  }
+
+  .memories-footer h3 {
+    font-size: 23px;
+  }
+
+  .memories-footer > p {
+    font-size: 18px;
+  }
+}
+
+/* VERY SMALL PHONES */
+
+@media (max-width: 330px) {
+  .memory-frame video {
+    height: 210px;
+  }
+
+  .memory-card > p {
+    font-size: 9px;
+    letter-spacing: 2px;
+  }
+}

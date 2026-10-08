@@ -1,0 +1,155 @@
+/* =========================================================
+   GOOGLE FONT
+   @import MUST ALWAYS BE AT THE TOP OF THE CSS FILE
+========================================================= */
+
+@import url("https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&display=swap");
+
+
+/* =========================================================
+   GLOBAL RESET
+========================================================= */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+/* =========================================================
+   HTML
+========================================================= */
+
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 10px;
+}
+
+
+/* =========================================================
+   BODY
+========================================================= */
+
+body {
+  width: 100%;
+  min-width: 320px;
+  min-height: 100vh;
+
+  font-family: "Cormorant Garamond", Georgia, serif;
+
+  background: #f5ead9;
+  color: #4d3529;
+
+  overflow-x: hidden;
+}
+
+
+/* =========================================================
+   ROOT
+========================================================= */
+
+#root {
+  width: 100%;
+  min-height: 100vh;
+}
+
+
+/* =========================================================
+   BUTTONS
+========================================================= */
+
+button {
+  cursor: pointer;
+  font-family: inherit;
+}
+
+
+/* =========================================================
+   LINKS
+========================================================= */
+
+a {
+  font-family: inherit;
+}
+
+
+/* =========================================================
+   IMAGES AND VIDEOS
+========================================================= */
+
+img,
+video {
+  display: block;
+  max-width: 100%;
+}
+
+
+/* =========================================================
+   REMOVE MOBILE TAP HIGHLIGHT
+========================================================= */
+
+button,
+a {
+  -webkit-tap-highlight-color: transparent;
+}
+
+
+/* =========================================================
+   TEXT SELECTION
+========================================================= */
+
+::selection {
+  background: #a58153;
+  color: #ffffff;
+}
+
+
+/* =========================================================
+   SCROLLBAR
+========================================================= */
+
+::-webkit-scrollbar {
+  width: 5px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f5ead9;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #a58153;
+  border-radius: 20px;
+}
+
+
+/* =========================================================
+   MOBILE SETTINGS
+========================================================= */
+
+@media (max-width: 600px) {
+  html {
+    scroll-padding-top: 0;
+  }
+
+  body {
+    min-width: 320px;
+  }
+}
+
+
+/* =========================================================
+   ACCESSIBILITY
+   Reduce animations when user prefers reduced motion.
+========================================================= */
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}

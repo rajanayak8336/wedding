@@ -1,0 +1,559 @@
+/* ========================================================= OPENING PAGE ========================================================= */
+.opening {
+  width: 100%;
+  min-height: 100vh;
+  min-height: 100svh;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 30px 20px;
+  overflow: hidden;
+  isolation: isolate;
+  background-color: #eadbc7;
+  background-image: linear-gradient(rgba(244, 231, 210, 0.48), rgba(244, 231, 210, 0.48)), var(--opening-image);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+/* ========================================================= SOFT BACKGROUND OVERLAY ========================================================= */
+.opening::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+  background: radial-gradient(circle at center, rgba(255, 250, 239, 0.18), transparent 55%);
+  pointer-events: none;
+}
+
+/* ========================================================= CONTENT ========================================================= */
+.opening-content {
+  width: min(100%, 650px);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 35px 25px;
+  animation: openingContentReveal 1.4s ease both;
+}
+
+/* ========================================================= GANESHA IMAGE ========================================================= */
+.ganesha-container {
+  width: 145px;
+  height: 145px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 22px;
+  animation: ganeshaReveal 1.5s ease both;
+}
+
+.ganesha-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 50%;
+  display: block;
+  border: none;
+  outline: none;
+  filter: drop-shadow(0 8px 18px rgba(80, 48, 25, 0.20));
+}
+
+.ganesha-container img {
+    width: 200px;
+    height: 200px;
+  }
+
+/* ========================================================= GANESH MANTRA ========================================================= */
+.ganesh-mantra {
+  margin: 0 0 20px;
+  color: #68482f;
+  font-family: "Noto Serif Devanagari", "Mangal", serif;
+  font-size: clamp(14px, 2vw, 17px);
+  line-height: 1.8;
+  letter-spacing: 0.5px;
+  text-align: center;
+}
+
+/* ========================================================= SHUBH VIVAH ========================================================= */
+.shubh-vivah {
+  margin: 2px 0 10px;
+  color: #7b512d;
+  font-family: "Noto Serif Devanagari", "Mangal", serif;
+  font-size: clamp(24px, 5vw, 34px);
+  font-weight: 500;
+  letter-spacing: 3px;
+  text-shadow: 0 2px 8px rgba(80, 48, 25, 0.12);
+  animation: shubhVivahReveal 1.6s ease both;
+}
+
+/* ========================================================= DIVIDER ========================================================= */
+.opening-divider {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  margin: 5px 0 22px;
+  color: #a47b4b;
+}
+
+.opening-divider i {
+  display: block;
+  width: 65px;
+  height: 1px;
+  background: #a47b4b;
+  opacity: 0.7;
+}
+
+.opening-divider span {
+  font-size: 11px;
+}
+
+/* ========================================================= MAIN TITLE ========================================================= */
+.opening-title {
+  margin: 0;
+  color: #503522;
+  font-family: "Cormorant Garamond", "Times New Roman", serif;
+  font-size: clamp(48px, 9vw, 82px);
+  font-weight: 400;
+  font-style: italic;
+  line-height: 0.9;
+  letter-spacing: -1px;
+  text-align: center;
+  text-shadow: 0 3px 12px rgba(70, 42, 24, 0.10);
+  animation: titleReveal 1.5s ease both;
+}
+
+.opening-title span {
+  display: block;
+}
+
+.opening-title strong {
+  display: block;
+  margin-top: 8px;
+  font-size: 0.82em;
+  font-weight: 400;
+  font-style: italic;
+}
+
+/* ========================================================= NAMES ========================================================= */
+.opening-names {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 14px;
+  margin-top: 27px;
+  color: #67452e;
+  font-family: "Cormorant Garamond", "Times New Roman", serif;
+  font-size: clamp(24px, 5vw, 36px);
+  font-style: italic;
+  font-weight: 500;
+}
+
+.opening-names small {
+  font-size: 20px;
+  font-style: normal;
+  color: #9b7045;
+}
+
+/* ========================================================= DATE ========================================================= */
+.opening-date {
+  margin: 10px 0 0;
+  color: #68482f;
+  font-size: 12px;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+}
+
+/* ========================================================= OPEN INVITATION BUTTON ========================================================= */
+.open-button {
+  position: relative;
+  margin-top: 30px;
+  min-width: 220px;
+  padding: 15px 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+  border: 1px solid #795331;
+  border-radius: 2px;
+  background: rgba(255, 248, 235, 0.72);
+  color: #68452c;
+  font-family: "Cormorant Garamond", "Times New Roman", serif;
+  font-size: 14px;
+  font-weight: 600;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  cursor: pointer;
+  overflow: hidden;
+  transition: transform 0.35s ease, background 0.35s ease, color 0.35s ease, box-shadow 0.35s ease;
+  animation: buttonFloat 2.4s ease-in-out infinite;
+}
+
+/* Button shimmer */
+.open-button::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -120%;
+  width: 80%;
+  height: 100%;
+  background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.65), transparent);
+  transform: skewX(-20deg);
+  animation: buttonShimmer 3s ease-in-out infinite;
+}
+
+/* Button text */
+.open-button span {
+  position: relative;
+  z-index: 1;
+}
+
+/* Arrow */
+.button-arrow {
+  font-size: 18px;
+  transition: transform 0.3s ease;
+}
+
+/* Hover */
+.open-button:hover {
+  background: #68452c;
+  color: #fffaf1;
+  transform: translateY(-4px);
+  box-shadow: 0 10px 25px rgba(75, 45, 25, 0.22);
+  animation-play-state: paused;
+}
+
+.open-button:hover .button-arrow {
+  transform: translate(4px, -4px);
+}
+
+/* Click */
+.open-button:active {
+  transform: translateY(-1px) scale(0.98);
+}
+
+/* ========================================================= HINT ========================================================= */
+.opening-hint {
+  margin: 18px 0 0;
+  color: #000000;
+  font-size: 20px;
+  letter-spacing: 2px;
+  opacity: 0.75;
+  text-transform: uppercase;
+  font-weight: 600;
+}
+
+/* ========================================================= ANIMATIONS ========================================================= */
+@keyframes openingContentReveal {
+  from {
+    opacity: 0;
+    transform: translateY(25px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes ganeshaReveal {
+  from {
+    opacity: 0;
+    transform: scale(0.75);
+  }
+
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+@keyframes shubhVivahReveal {
+  from {
+    opacity: 0;
+    transform: translateY(12px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes titleReveal {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes buttonFloat {
+
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+
+  50% {
+    transform: translateY(-5px);
+  }
+}
+
+@keyframes buttonShimmer {
+  0% {
+    left: -120%;
+  }
+
+  45%,
+  100% {
+    left: 140%;
+  }
+}
+
+/* ========================================================= TABLET ========================================================= */
+@media (max-width: 768px) {
+  .opening {
+    padding: 22px 16px;
+  }
+
+  .opening-content {
+    padding: 25px 18px;
+  }
+
+  .ganesha-container {
+    width: 300px;
+    height: 300px;
+    margin-bottom: 10px;
+  }
+
+  .ganesh-mantra {
+    font-size: 18px;
+    line-height: 1.7;
+    font-weight: 500;
+  }
+
+  .shubh-vivah {
+    font-size: 27px;
+    letter-spacing: 2px;
+  }
+
+  .opening-title {
+    font-size: clamp(45px, 11vw, 68px);
+  }
+
+  .opening-names {
+    margin-top: 22px;
+  }
+
+  .open-button {
+    margin-top: 27px;
+  }
+}
+
+/* ========================================================= MOBILE ========================================================= */
+@media (max-width: 600px) {
+  .opening {
+    min-height: 100svh;
+    padding: max(16px, env(safe-area-inset-top)) 14px max(16px, env(safe-area-inset-bottom));
+  }
+
+  .opening-content {
+    width: 100%;
+    padding: 15px 10px;
+  }
+
+  .ganesha-container {
+    width: 105px;
+    height: 105px;
+    margin-bottom: 45px;
+  }
+  .ganesha-container img {
+    width: 200px;
+    height: 200px;
+  }
+  
+
+  .ganesh-mantra {
+    font-size: 20px;
+    line-height: 1.65;
+    margin-bottom: 25px;
+    font-weight: 500;
+  }
+
+  .shubh-vivah {
+    font-size: 30px;
+    letter-spacing: 1.5px;
+  }
+
+  .opening-divider {
+    margin-bottom: 18px;
+  }
+
+  .opening-divider i {
+    width: 45px;
+  }
+
+  .opening-title {
+    font-size: clamp(43px, 13vw, 60px);
+    line-height: 0.92;
+  }
+
+  .opening-title strong {
+    margin-top: 6px;
+  }
+
+  .opening-names {
+    gap: 10px;
+    margin-top: 20px;
+    font-size: 24px;
+  }
+
+  .opening-names small {
+    font-size: 17px;
+  }
+
+  .opening-date {
+    margin-top: 8px;
+    font-size: 10px;
+    letter-spacing: 2px;
+  }
+
+  .open-button {
+    width: min(100%, 220px);
+    min-width: 0;
+    margin-top: 24px;
+    padding: 14px 18px;
+    font-size: 11px;
+    letter-spacing: 1.5px;
+  }
+
+  .opening-hint {
+    margin-top: 15px;
+    font-size: 16px;
+    letter-spacing: 1.5px;
+    font-weight: 1000;
+    color: rgb(44, 13, 13);
+  }
+}
+
+/* ========================================================= EXTRA SMALL PHONES ========================================================= */
+@media (max-width: 360px) {
+  .opening {
+    min-height: 100svh;
+    padding: max(16px, env(safe-area-inset-top)) 14px max(16px, env(safe-area-inset-bottom));
+  }
+
+  .opening-content {
+    width: 100%;
+    padding: 15px 10px;
+  }
+
+  .ganesha-container {
+    width: 105px;
+    height: 105px;
+    margin-bottom: 45px;
+  }
+  .ganesha-container img {
+    width: 200px;
+    height: 200px;
+  }
+  
+
+  .ganesh-mantra {
+    font-size: 20px;
+    line-height: 1.65;
+    margin-bottom: 25px;
+    font-weight: 500;
+  }
+
+  .shubh-vivah {
+    font-size: 30px;
+    letter-spacing: 1.5px;
+  }
+
+  .opening-divider {
+    margin-bottom: 18px;
+  }
+
+  .opening-divider i {
+    width: 45px;
+  }
+
+  .opening-title {
+    font-size: clamp(43px, 13vw, 60px);
+    line-height: 0.92;
+  }
+
+  .opening-title strong {
+    margin-top: 6px;
+  }
+
+  .opening-names {
+    gap: 10px;
+    margin-top: 20px;
+    font-size: 24px;
+  }
+
+  .opening-names small {
+    font-size: 17px;
+  }
+
+  .opening-date {
+    margin-top: 8px;
+    font-size: 10px;
+    letter-spacing: 2px;
+  }
+
+  .open-button {
+    width: min(100%, 220px);
+    min-width: 0;
+    margin-top: 24px;
+    padding: 14px 18px;
+    font-size: 11px;
+    letter-spacing: 1.5px;
+  }
+
+  .opening-hint {
+    margin-top: 15px;
+    font-size: 16px;
+    letter-spacing: 1.5px;
+    font-weight: 1000;
+    color: rgb(44, 13, 13);
+  }
+}
+
+/* ========================================================= SHORT MOBILE SCREENS ========================================================= */
+@media (max-height: 700px) and (max-width: 600px) {
+  .ganesha-container {
+    width: 82px;
+    height: 82px;
+  }
+
+  .ganesh-mantra {
+    margin-bottom: 10px;
+  }
+
+  .opening-title {
+    font-size: 39px;
+  }
+
+  .opening-names {
+    margin-top: 15px;
+  }
+
+  .open-button {
+    margin-top: 18px;
+  }
+
+  .opening-hint {
+    margin-top: 10px;
+  }
+}

@@ -1,0 +1,958 @@
+/* =========================================================
+   COUPLE / OUR STORY SECTION
+========================================================= */
+
+.couple {
+  width: 100%;
+  background: var(--cream, #f3e5c9);
+  color: #4b2b16;
+  text-align: center;
+  padding: 20px;
+  box-sizing: border-box;
+  overflow: hidden;
+  font-family: Georgia, "Times New Roman", serif;
+}
+
+.couple-paper {
+  width: min(100%, 1100px);
+  margin: 0 auto;
+  position: relative;
+  box-sizing: border-box;
+  padding: 75px 55px 65px;
+
+  background:
+    radial-gradient(
+      circle at 20% 20%,
+      rgba(255, 255, 255, 0.28),
+      transparent 30%
+    ),
+    radial-gradient(
+      circle at 80% 70%,
+      rgba(139, 102, 58, 0.06),
+      transparent 35%
+    ),
+    #f5e8cd;
+
+  border: 1px solid rgba(165, 129, 83, 0.16);
+
+  box-shadow:
+    inset 0 0 35px rgba(110, 75, 35, 0.07),
+    0 2px 12px rgba(80, 50, 20, 0.04);
+}
+
+.couple-paper::before {
+  content: "";
+  position: absolute;
+  inset: 16px;
+  border: 1px solid rgba(165, 129, 83, 0.14);
+  pointer-events: none;
+}
+
+
+/* =========================================================
+   HEADING
+========================================================= */
+
+.section-heading {
+  position: relative;
+  z-index: 2;
+  text-align: center;
+  font-family: Georgia, "Times New Roman", serif;
+}
+
+.section-heading > span {
+  display: block;
+  margin: 0 0 14px;
+
+  color: #4a2b17;
+
+  font-size: 14px;
+  font-weight: 600;
+
+  letter-spacing: 6px;
+  line-height: 1.2;
+}
+
+.section-heading h2 {
+  margin: 0;
+
+  color: #4a2b17;
+
+  font-size: clamp(54px, 7vw, 84px);
+
+  font-weight: 500;
+  font-style: italic;
+
+  line-height: 0.98;
+}
+
+.heading-line {
+  width: 115px;
+  height: 1px;
+
+  position: relative;
+
+  margin: 30px auto 27px;
+
+  background: #a58153;
+}
+
+.heading-line::after {
+  content: "♥";
+
+  position: absolute;
+
+  left: 50%;
+  top: 50%;
+
+  transform: translate(-50%, -50%);
+
+  padding: 0 10px;
+
+  color: #a58153;
+
+  background: #f5e8cd;
+
+  font-size: 22px;
+  line-height: 1;
+}
+
+.section-heading > p {
+  max-width: 690px;
+
+  margin: 0 auto;
+
+  color: #5a3821;
+
+  font-size: 19px;
+
+  font-style: italic;
+
+  line-height: 1.65;
+}
+
+
+/* =========================================================
+   COUPLE GRID
+========================================================= */
+
+.couple-grid {
+  width: min(100%, 900px);
+
+  margin: 60px auto 0;
+
+  display: grid;
+
+  grid-template-columns:
+    repeat(2, minmax(0, 1fr));
+
+  gap: 50px;
+
+  align-items: start;
+
+  position: relative;
+
+  z-index: 2;
+}
+
+
+/* =========================================================
+   HEART
+   Hidden on desktop/tablet
+========================================================= */
+
+.couple-heart {
+  display: none;
+}
+
+
+/* =========================================================
+   PERSON
+========================================================= */
+
+.person {
+  width: 100%;
+  min-width: 0;
+
+  text-align: center;
+}
+
+
+/* =========================================================
+   PHOTO FRAME
+========================================================= */
+
+.person-frame {
+  width: 100%;
+
+  box-sizing: border-box;
+
+  padding: 10px;
+
+  position: relative;
+
+  border: 1px solid #b28c59;
+
+  background: rgba(255, 255, 255, 0.08);
+
+  overflow: hidden;
+}
+
+.person-frame::after {
+  content: "";
+
+  position: absolute;
+
+  inset: 5px;
+
+  border: 1px solid rgba(165, 129, 83, 0.72);
+
+  pointer-events: none;
+}
+
+.person-frame img {
+  display: block;
+
+  width: 100%;
+  height: 470px;
+
+  object-fit: cover;
+  object-position: center;
+}
+
+
+/* =========================================================
+   NAMES
+========================================================= */
+
+.person h3 {
+  margin: 28px 0 0;
+
+  color: #4a2b17;
+
+  font-size: clamp(36px, 4vw, 50px);
+
+  font-weight: 500;
+
+  font-style: italic;
+
+  line-height: 1;
+}
+
+
+/* =========================================================
+   FLORAL DIVIDER
+========================================================= */
+
+.floral-divider {
+  margin: 18px auto 17px;
+
+  color: #a58153;
+
+  font-size: 25px;
+
+  line-height: 1;
+}
+
+
+/* =========================================================
+   PARENT LABEL
+========================================================= */
+
+.person > p {
+  margin: 0 0 12px;
+
+  color: #4a2b17;
+
+  font-size: 12px;
+
+  font-weight: 600;
+
+  letter-spacing: 4px;
+
+  text-transform: uppercase;
+}
+
+
+/* =========================================================
+   PARENT NAMES
+========================================================= */
+
+.person > strong {
+  display: block;
+
+  margin: 2px 0;
+
+  color: #5a3821;
+
+  font-size: 17px;
+
+  font-weight: 400;
+
+  line-height: 1.55;
+}
+
+
+/* =========================================================
+   & BETWEEN PARENTS
+========================================================= */
+
+.parent-and {
+  margin: 4px 0;
+
+  color: #a58153;
+
+  font-size: 20px;
+
+  font-style: italic;
+
+  line-height: 1;
+}
+
+
+/* =========================================================
+   QUOTE
+========================================================= */
+
+.couple-quote {
+  position: relative;
+
+  z-index: 2;
+
+  margin: 65px auto 0;
+
+  color: #4a2b17;
+
+  font-size: 22px;
+
+  font-style: italic;
+
+  line-height: 1.5;
+}
+
+
+/* =========================================================
+   BOTTOM DIVIDER
+========================================================= */
+
+.bottom-divider {
+  width: 270px;
+  height: 30px;
+
+  position: relative;
+
+  margin: 20px auto 0;
+
+  color: #a58153;
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: center;
+}
+
+.bottom-divider::before,
+.bottom-divider::after {
+  content: "";
+
+  width: 95px;
+  height: 1px;
+
+  background: #a58153;
+}
+
+.bottom-divider span {
+  padding: 0 15px;
+
+  font-size: 23px;
+
+  line-height: 1;
+}
+
+
+/* =========================================================
+   DECORATIVE CORNER LEAVES
+========================================================= */
+
+.leaf-decoration {
+  position: absolute;
+
+  bottom: 18px;
+
+  color: #a58153;
+
+  opacity: 0.8;
+
+  font-size: 64px;
+
+  line-height: 1;
+
+  z-index: 1;
+}
+
+.leaf-left {
+  left: 20px;
+
+  transform: rotate(-35deg);
+}
+
+.leaf-right {
+  right: 20px;
+
+  transform: rotate(35deg) scaleX(-1);
+}
+
+
+/* =========================================================
+   TABLET
+========================================================= */
+
+@media (max-width: 800px) {
+
+  .couple {
+    padding: 12px;
+  }
+
+  .couple-paper {
+    padding: 65px 30px 60px;
+  }
+
+  .couple-paper::before {
+    inset: 10px;
+  }
+
+  .section-heading h2 {
+    font-size: 62px;
+  }
+
+  .section-heading > p {
+    font-size: 17px;
+  }
+
+  .couple-grid {
+    width: 100%;
+
+    gap: 25px;
+
+    margin-top: 50px;
+  }
+
+  .person-frame {
+    padding: 8px;
+  }
+
+  .person-frame img {
+    height: 390px;
+  }
+
+  .person h3 {
+    font-size: 40px;
+  }
+
+  .person > strong {
+    font-size: 15px;
+  }
+
+  .parent-and {
+    font-size: 18px;
+  }
+
+  .leaf-decoration {
+    font-size: 50px;
+  }
+}
+
+
+/* =========================================================
+   MOBILE
+========================================================= */
+
+@media (max-width: 550px) {
+
+  .couple {
+    padding: 6px;
+  }
+
+  .couple-paper {
+    padding: 50px 12px 48px;
+  }
+
+  .couple-paper::before {
+    inset: 7px;
+  }
+
+
+  /* -------------------------------------------------------
+     HEADING
+  ------------------------------------------------------- */
+
+  .section-heading > span {
+    font-size: 10px;
+
+    letter-spacing: 4px;
+
+    margin-bottom: 12px;
+  }
+
+  .section-heading h2 {
+    font-size: 45px;
+  }
+
+  .heading-line {
+    width: 90px;
+
+    margin: 22px auto 19px;
+  }
+
+  .heading-line::after {
+    font-size: 18px;
+  }
+
+  .section-heading > p {
+    padding: 0 8px;
+
+    font-size: 14px;
+
+    line-height: 1.65;
+  }
+
+
+  /* -------------------------------------------------------
+     PHOTO GRID
+
+     More center gap means the heart gets its own space.
+  ------------------------------------------------------- */
+
+  .couple-grid {
+    width: 100%;
+
+    margin: 38px auto 0;
+
+    display: grid;
+
+    grid-template-columns:
+      minmax(0, 1fr)
+      minmax(0, 1fr);
+
+    column-gap: 42px;
+
+    position: relative;
+  }
+
+
+  /* -------------------------------------------------------
+     MOVE PHOTOS AWAY FROM HEART
+  ------------------------------------------------------- */
+
+  .person.groom {
+    transform: translateX(-5px);
+  }
+
+  .person.bride {
+    transform: translateX(5px);
+  }
+
+
+  /* -------------------------------------------------------
+     PHOTO FRAME
+  ------------------------------------------------------- */
+
+  .person-frame {
+    padding: 4px;
+  }
+
+  .person-frame::after {
+    inset: 3px;
+  }
+
+  .person-frame img {
+    width: 100%;
+
+    height: 230px;
+
+    object-fit: cover;
+
+    object-position: center;
+  }
+
+
+  /* -------------------------------------------------------
+     HEART BETWEEN PHOTOS
+  ------------------------------------------------------- */
+
+  .couple-heart {
+    display: flex;
+
+    position: absolute;
+
+    left: 50%;
+
+    top: 115px;
+
+    transform: translate(-50%, -50%);
+
+    width: 38px;
+    height: 38px;
+
+    align-items: center;
+
+    justify-content: center;
+
+    background: #f5e8cd;
+
+    border-radius: 50%;
+
+    color: #a58153;
+
+    font-size: 20px;
+
+    line-height: 1;
+
+    z-index: 10;
+
+    box-shadow:
+      0 0 0 5px #f5e8cd,
+      0 3px 10px rgba(80, 50, 20, 0.12);
+  }
+
+
+  /* -------------------------------------------------------
+     NAMES
+  ------------------------------------------------------- */
+
+  .person h3 {
+    margin-top: 18px;
+
+    font-size: 27px;
+  }
+
+
+  /* -------------------------------------------------------
+     FLORAL DIVIDER
+  ------------------------------------------------------- */
+
+  .floral-divider {
+    margin: 10px auto 11px;
+
+    font-size: 18px;
+  }
+
+
+  /* -------------------------------------------------------
+     PARENT LABEL
+  ------------------------------------------------------- */
+
+  .person > p {
+    margin-bottom: 8px;
+
+    font-size: 8px;
+
+    letter-spacing: 1.5px;
+  }
+
+
+  /* -------------------------------------------------------
+     PARENT NAMES
+  ------------------------------------------------------- */
+
+  .person > strong {
+    font-size: 12px;
+
+    line-height: 1.55;
+  }
+
+  .parent-and {
+    margin: 3px 0;
+
+    font-size: 16px;
+  }
+
+
+  /* -------------------------------------------------------
+     QUOTE
+  ------------------------------------------------------- */
+
+  .couple-quote {
+    margin-top: 43px;
+
+    padding: 0 10px;
+
+    font-size: 16px;
+  }
+
+
+  /* -------------------------------------------------------
+     BOTTOM DIVIDER
+  ------------------------------------------------------- */
+
+  .bottom-divider {
+    width: 190px;
+
+    margin-top: 15px;
+  }
+
+  .bottom-divider::before,
+  .bottom-divider::after {
+    width: 60px;
+  }
+
+  .bottom-divider span {
+    padding: 0 10px;
+
+    font-size: 18px;
+  }
+
+
+  /* -------------------------------------------------------
+     CORNER LEAVES
+  ------------------------------------------------------- */
+
+  .leaf-decoration {
+    bottom: 12px;
+
+    font-size: 38px;
+  }
+
+  .leaf-left {
+    left: 7px;
+  }
+
+  .leaf-right {
+    right: 7px;
+  }
+}
+
+
+/* =========================================================
+   SMALL PHONES
+========================================================= */
+
+@media (max-width: 400px) {
+
+  .couple-paper {
+    padding-left: 10px;
+
+    padding-right: 10px;
+  }
+
+
+  /* -------------------------------------------------------
+     HEADING
+  ------------------------------------------------------- */
+
+  .section-heading h2 {
+    font-size: 39px;
+  }
+
+  .section-heading > p {
+    padding: 0 5px;
+
+    font-size: 13px;
+  }
+
+
+  /* -------------------------------------------------------
+     PHOTO GRID
+
+     Extra center space for heart.
+  ------------------------------------------------------- */
+
+  .couple-grid {
+    width: 100%;
+
+    column-gap: 34px;
+  }
+
+
+  /* Move photos slightly outward */
+
+  .person.groom {
+    transform: translateX(-4px);
+  }
+
+  .person.bride {
+    transform: translateX(4px);
+  }
+
+
+  /* -------------------------------------------------------
+     PHOTOS
+  ------------------------------------------------------- */
+
+  .person-frame {
+    padding: 4px;
+  }
+
+  .person-frame img {
+    height: 205px;
+  }
+
+
+  /* -------------------------------------------------------
+     HEART
+  ------------------------------------------------------- */
+
+  .couple-heart {
+    top: 102px;
+
+    width: 34px;
+
+    height: 34px;
+
+    font-size: 18px;
+
+    box-shadow:
+      0 0 0 4px #f5e8cd,
+      0 3px 8px rgba(80, 50, 20, 0.12);
+  }
+
+
+  /* -------------------------------------------------------
+     NAMES
+  ------------------------------------------------------- */
+
+  .person h3 {
+    margin-top: 16px;
+
+    font-size: 23px;
+  }
+
+
+  /* -------------------------------------------------------
+     FLORAL DIVIDER
+  ------------------------------------------------------- */
+
+  .floral-divider {
+    font-size: 16px;
+
+    margin: 9px auto 10px;
+  }
+
+
+  /* -------------------------------------------------------
+     PARENT LABEL
+  ------------------------------------------------------- */
+
+  .person > p {
+    font-size: 7px;
+
+    letter-spacing: 1px;
+  }
+
+
+  /* -------------------------------------------------------
+     PARENT NAMES
+  ------------------------------------------------------- */
+
+  .person > strong {
+    font-size: 11px;
+
+    line-height: 1.5;
+  }
+
+  .parent-and {
+    font-size: 14px;
+  }
+
+
+  /* -------------------------------------------------------
+     QUOTE
+  ------------------------------------------------------- */
+
+  .couple-quote {
+    font-size: 14px;
+  }
+
+  .leaf-decoration {
+    font-size: 32px;
+  }
+}
+
+
+/* =========================================================
+   VERY SMALL PHONES
+========================================================= */
+
+@media (max-width: 330px) {
+
+  /* -------------------------------------------------------
+     PHOTO GRID
+  ------------------------------------------------------- */
+
+  .couple-grid {
+    width: 100%;
+
+    column-gap: 28px;
+  }
+
+
+  /* Move photos away from center */
+
+  .person.groom {
+    transform: translateX(-3px);
+  }
+
+  .person.bride {
+    transform: translateX(3px);
+  }
+
+
+  /* -------------------------------------------------------
+     PHOTOS
+  ------------------------------------------------------- */
+
+  .person-frame img {
+    height: 180px;
+  }
+
+
+  /* -------------------------------------------------------
+     HEART
+  ------------------------------------------------------- */
+
+  .couple-heart {
+    top: 90px;
+
+    width: 30px;
+
+    height: 30px;
+
+    font-size: 16px;
+
+    box-shadow:
+      0 0 0 3px #f5e8cd,
+      0 3px 8px rgba(80, 50, 20, 0.12);
+  }
+
+
+  /* -------------------------------------------------------
+     NAMES
+  ------------------------------------------------------- */
+
+  .person h3 {
+    font-size: 21px;
+  }
+
+
+  /* -------------------------------------------------------
+     PARENT LABEL
+  ------------------------------------------------------- */
+
+  .person > p {
+    font-size: 6px;
+  }
+
+
+  /* -------------------------------------------------------
+     PARENT NAMES
+  ------------------------------------------------------- */
+
+  .person > strong {
+    font-size: 10px;
+  }
+
+  .parent-and {
+    font-size: 13px;
+  }
+}
