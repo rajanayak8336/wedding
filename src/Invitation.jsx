@@ -15,7 +15,7 @@ export default function Invitation() {
       <div className="invitation-content">
 
         <p className="ganesha-quote">
-          With the blessings of Lord Ganesha
+          With blessings of Ganesha
         </p>
 
         <p className="invitation-welcome">
@@ -39,9 +39,13 @@ export default function Invitation() {
         </h1>
 
         <div className="invitation-info">
-          <p>10<sup>th</sup> {wedding.weddingDate}</p>
-          <p>{wedding.weddingDay}</p>
-          <p>{wedding.weddingTime} pm</p>
+          <p className="invitation-date-time">
+            10<sup>th</sup> {wedding.weddingDate}
+          </p>
+          <p className="invitation-date-time">{wedding.weddingDay}</p>
+          <p className="invitation-date-time">
+            {wedding.weddingTime} pm
+          </p>
           <p>{wedding.venue}</p>
           <p>{wedding.city}</p>
         </div>

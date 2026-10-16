@@ -7,6 +7,19 @@
   text-align: center;
   box-sizing: border-box;
   overflow: hidden;
+  font-family: Georgia, "Times New Roman", serif;
+}
+
+.memories .section-heading h2 {
+  font-family: Georgia, "Times New Roman", serif;
+  font-style: normal;
+}
+
+.memories .section-heading > p {
+  font-family: "Monotype Corsiva", "Apple Chancery", cursive;
+  font-size: clamp(18px, 2.4vw, 24px);
+  font-style: normal;
+  line-height: 1.6;
 }
 
 /* VIDEO GRID */
@@ -77,15 +90,16 @@
 }
 
 .memories-footer > p {
-  font-size: 18px;
+  font-family: "Monotype Corsiva", "Apple Chancery", cursive;
+  font-size: clamp(18px, 2.4vw, 24px);
   line-height: 1.8;
-  font-style: italic;
+  font-style: normal;
 }
 
 .memories-footer h3 {
   font-size: 32px;
   font-weight: 400;
-  font-style: italic;
+  font-style: normal;
   margin: 18px 0 10px;
 }
 
@@ -190,7 +204,7 @@
   }
 
   .memories-footer > p {
-    font-size: 18px;
+    font-size: clamp(18px, 4.5vw, 22px);
     line-height: 1.7;
   }
 

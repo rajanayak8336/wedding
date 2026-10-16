@@ -79,36 +79,32 @@ export default function Venue() {
             ))}
           </div>
 
-          <small>
-            {wedding.weddingDate} · {wedding.weddingTime}
-          </small>
         </div>
 
         {/* WARM REGARDS */}
         <div className="warm-regards">
-          <span>WITH LOVE AND BLESSINGS</span>
+          <span>Regards</span>
 
-          <h3>
-            The
-            <br />
-            <strong>Dharavath &amp; Tandel</strong>
-            <br />Families
-          </h3>
+          <h3>Dharavath &amp; Tandel Family</h3>
 
           <p>
-            Two hearts, two families, and one beautiful journey.
-            <br />
-            with the love and blessings of our families,
-            <br />
-            we invite you to be a part of the moments
-            <br />
-            that will become memories for a lifetime.
+            <span className="family-message">
+              Two hearts, two families, and one beautiful journey.
+              <br />
+              with the love and blessings of our families,
+              <br />
+              we invite you to be a part of the moments
+              <br />
+              that will become memories for a lifetime.
+            </span>
             <br />
             <br />
             -------♥︎-------
             <br />
             <br />
-            Your presence will make our celebration complete.
+            <span className="family-presence">
+              Your presence will make our celebration complete.
+            </span>
           </p>
         </div>
 

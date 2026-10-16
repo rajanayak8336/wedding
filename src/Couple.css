@@ -80,8 +80,10 @@
 
   font-size: clamp(54px, 7vw, 84px);
 
+  font-family: Georgia, "Times New Roman", serif;
+
   font-weight: 500;
-  font-style: italic;
+  font-style: normal;
 
   line-height: 0.98;
 }
@@ -126,7 +128,9 @@
 
   font-size: 19px;
 
-  font-style: italic;
+  font-family: "Monotype Corsiva", "Apple Chancery", cursive;
+
+  font-style: normal;
 
   line-height: 1.65;
 }
@@ -179,7 +183,7 @@
 
 
 /* =========================================================
-   PHOTO FRAME
+   PHOTOS
 ========================================================= */
 
 .person-frame {
@@ -187,27 +191,13 @@
 
   box-sizing: border-box;
 
-  padding: 10px;
-
   position: relative;
-
-  border: 1px solid #b28c59;
-
-  background: rgba(255, 255, 255, 0.08);
 
   overflow: hidden;
 }
 
 .person-frame::after {
-  content: "";
-
-  position: absolute;
-
-  inset: 5px;
-
-  border: 1px solid rgba(165, 129, 83, 0.72);
-
-  pointer-events: none;
+  content: none;
 }
 
 .person-frame img {
@@ -230,11 +220,11 @@
 
   color: #4a2b17;
 
-  font-size: clamp(36px, 4vw, 50px);
+  font-size: clamp(32px, 3.5vw, 44px);
 
+  font-family: Georgia, "Times New Roman", serif;
   font-weight: 500;
-
-  font-style: italic;
+  font-style: normal;
 
   line-height: 1;
 }
@@ -302,9 +292,9 @@
 
   color: #a58153;
 
-  font-size: 20px;
+  font-size: 15px;
 
-  font-style: italic;
+  font-style: normal;
 
   line-height: 1;
 }
@@ -325,7 +315,9 @@
 
   font-size: 22px;
 
-  font-style: italic;
+  font-family: "Monotype Corsiva", "Apple Chancery", cursive;
+
+  font-style: normal;
 
   line-height: 1.5;
 }
@@ -438,16 +430,12 @@
     margin-top: 50px;
   }
 
-  .person-frame {
-    padding: 8px;
-  }
-
   .person-frame img {
     height: 390px;
   }
 
   .person h3 {
-    font-size: 40px;
+    font-size: 36px;
   }
 
   .person > strong {
@@ -455,7 +443,7 @@
   }
 
   .parent-and {
-    font-size: 18px;
+    font-size: 14px;
   }
 
   .leaf-decoration {
@@ -512,7 +500,7 @@
   .section-heading > p {
     padding: 0 8px;
 
-    font-size: 14px;
+    font-size: 17px;
 
     line-height: 1.65;
   }
@@ -555,16 +543,8 @@
 
 
   /* -------------------------------------------------------
-     PHOTO FRAME
+     PHOTOS
   ------------------------------------------------------- */
-
-  .person-frame {
-    padding: 4px;
-  }
-
-  .person-frame::after {
-    inset: 3px;
-  }
 
   .person-frame img {
     width: 100%;
@@ -624,7 +604,7 @@
   .person h3 {
     margin-top: 18px;
 
-    font-size: 27px;
+    font-size: 25px;
   }
 
 
@@ -665,7 +645,7 @@
   .parent-and {
     margin: 3px 0;
 
-    font-size: 16px;
+    font-size: 13px;
   }
 
 
@@ -678,7 +658,7 @@
 
     padding: 0 10px;
 
-    font-size: 16px;
+    font-size: 18px;
   }
 
 
@@ -780,10 +760,6 @@
      PHOTOS
   ------------------------------------------------------- */
 
-  .person-frame {
-    padding: 4px;
-  }
-
   .person-frame img {
     height: 205px;
   }
@@ -815,7 +791,7 @@
   .person h3 {
     margin-top: 16px;
 
-    font-size: 23px;
+    font-size: 22px;
   }
 
 
@@ -852,7 +828,7 @@
   }
 
   .parent-and {
-    font-size: 14px;
+    font-size: 12px;
   }
 
 
@@ -861,7 +837,7 @@
   ------------------------------------------------------- */
 
   .couple-quote {
-    font-size: 14px;
+    font-size: 16px;
   }
 
   .leaf-decoration {
@@ -931,7 +907,7 @@
   ------------------------------------------------------- */
 
   .person h3 {
-    font-size: 21px;
+    font-size: 20px;
   }
 
 
@@ -953,6 +929,6 @@
   }
 
   .parent-and {
-    font-size: 13px;
+    font-size: 11px;
   }
 }

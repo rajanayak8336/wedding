@@ -15,6 +15,14 @@
   width: min(100%, 700px);
 }
 
+/* Keep the venue heading in the section's Georgia style. */
+.venue-section .section-heading,
+.venue-section .section-heading > span,
+.venue-section .section-heading h2 {
+  font-family: Georgia, "Times New Roman", serif;
+  font-style: normal;
+}
+
 /* =========================================================
    DEFAULT VENUE FONT
 ========================================================= */
@@ -187,23 +195,6 @@
 }
 
 /* =========================================================
-   WEDDING DATE / TIME
-========================================================= */
-
-.countdown-panel small {
-  display: block;
-
-  font-family: "Cormorant Garamond", Georgia, serif;
-
-  font-size: 13px;
-  font-weight: 500;
-
-  letter-spacing: 0.8px;
-
-  opacity: 0.8;
-}
-
-/* =========================================================
    WARM REGARDS
 ========================================================= */
 
@@ -212,28 +203,38 @@
 }
 
 .warm-regards > span {
-  font-size: 10px;
-  letter-spacing: 3px;
+  display: block;
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: clamp(18px, 5vw, 30px);
+  font-weight: 400;
+  font-style: normal;
+  line-height: 1.25;
 }
 
 .warm-regards h3 {
-  font-size: clamp(30px, 5vw, 42px);
-
+  margin: 10px 0 20px;
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: clamp(18px, 5vw, 30px);
   font-weight: 400;
-  font-style: italic;
-
-  margin: 16px 0;
-}
-
-.warm-regards h3 i {
-  font-size: 23px;
-  margin: 0 5px;
+  font-style: normal;
+  line-height: 1.3;
+  white-space: nowrap;
 }
 
 .warm-regards p {
+  margin: 0;
+  font-family: Georgia, "Times New Roman", serif;
   font-size: 15px;
   line-height: 1.8;
-  font-style: italic;
+  font-style: normal;
+}
+
+.family-message,
+.family-presence {
+  font-family: "Monotype Corsiva", "Apple Chancery", cursive;
+  font-size: clamp(18px, 2.6vw, 23px);
+  font-style: normal;
+  line-height: 1.5;
 }
 
 /* =========================================================
@@ -281,11 +282,6 @@
     letter-spacing: 1px;
   }
 
-  .countdown-panel small {
-    font-size: 11px;
-    letter-spacing: 0.5px;
-  }
-
   /* Family message */
 
   .warm-regards {
@@ -295,6 +291,11 @@
   .warm-regards p {
     font-size: 13px;
     line-height: 1.7;
+  }
+
+  .family-message,
+  .family-presence {
+    font-size: clamp(17px, 4.6vw, 21px);
   }
 }
 
@@ -328,9 +329,5 @@
   .countdown-panel > p {
     font-size: 9px;
     letter-spacing: 1.5px;
-  }
-
-  .countdown-panel small {
-    font-size: 10px;
   }
 }
