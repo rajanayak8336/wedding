@@ -261,17 +261,16 @@
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  gap: 12px;
 
   width: fit-content;
   max-width: 100%;
-  min-height: 48px;
-  min-width: 220px;
+  min-height: 40px;
+  min-width: 180px;
 
   margin-top: 28px;
-  padding: 14px 22px;
+  padding: 10px 16px;
 
-  border: 1px solid #795331;
+  border: none;
   border-radius: 2px;
 
   background: rgba(255, 248, 235, 0.85);
@@ -320,25 +319,10 @@
   z-index: 1;
 }
 
-.button-arrow {
-  display: inline-block;
-  width: 9px;
-  height: 9px;
-
-  flex-shrink: 0;
-
-  border-top: 1.5px solid currentColor;
-  border-right: 1.5px solid currentColor;
-
-  transform: rotate(45deg);
-  transition: transform 0.3s ease;
-}
-
 .open-button:hover {
   background: #795331;
   color: #fffaf1;
 
-  border-color: #68452c;
   box-shadow: 0 8px 20px rgba(75, 45, 25, 0.2);
   animation-play-state: paused;
 }
@@ -346,10 +330,6 @@
 .open-button:hover,
 .open-button:focus-visible {
   transform: translateY(-4px);
-}
-
-.open-button:hover .button-arrow {
-  transform: translate(3px, -3px) rotate(45deg);
 }
 
 .open-button:active {
@@ -628,13 +608,12 @@
   }
 
   .open-button {
-    width: min(100%, 240px);
+    width: min(100%, 200px);
     min-width: 0;
-    min-height: 46px;
+    min-height: 38px;
 
     margin-top: 23px;
-    padding: 13px 15px;
-    gap: 10px;
+    padding: 10px 12px;
 
     font-size: 11px;
     letter-spacing: 1px;
@@ -703,9 +682,9 @@
   }
 
   .open-button {
-    width: min(100%, 220px);
+    width: min(100%, 190px);
     margin-top: 20px;
-    padding: 12px 10px;
+    padding: 9px 10px;
     font-size: 10px;
     letter-spacing: 0.8px;
   }
@@ -776,8 +755,7 @@
     animation: none;
   }
 
-  .open-button,
-  .button-arrow {
+  .open-button {
     transition: none;
   }
 }

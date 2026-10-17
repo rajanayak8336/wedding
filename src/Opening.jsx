@@ -54,7 +54,6 @@ export default function Opening({ onOpen }) {
           onClick={onOpen}
         >
           <span>Click Here to Open </span>
-          <span className="button-arrow"></span>
         </button>
 
         {/* Bottom Hint */}
