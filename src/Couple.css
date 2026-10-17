@@ -17,6 +17,7 @@
   width: min(100%, 1100px);
   margin: 0 auto;
   position: relative;
+  isolation: isolate;
   box-sizing: border-box;
   padding: 75px 55px 65px;
 
@@ -187,27 +188,45 @@
 ========================================================= */
 
 .person-frame {
-  width: 100%;
-
+  width: min(100%, 360px);
+  aspect-ratio: 0.76;
+  margin: 0 auto;
   box-sizing: border-box;
-
   position: relative;
-
   overflow: hidden;
+  background: #f5e8cd;
+  border: 1px solid rgba(165, 129, 83, 0.72);
+  border-radius: 50% 50% 4px 4px;
+  box-shadow: 0 8px 22px rgba(80, 50, 20, 0.1);
 }
 
-.person-frame::after {
-  content: none;
+.person-frame::before {
+  content: "";
+  position: absolute;
+  inset: 6px 6px 0;
+  z-index: 1;
+  border: 1px solid rgba(255, 248, 237, 0.85);
+  border-bottom: 0;
+  border-radius: 50% 50% 0 0;
+  pointer-events: none;
 }
 
 .person-frame img {
   display: block;
-
   width: 100%;
-  height: 470px;
+  height: 100%;
 
   object-fit: cover;
-  object-position: center;
+  object-position: center center;
+  mix-blend-mode: darken;
+  -webkit-mask-image:
+    linear-gradient(to right, transparent, #000 7%, #000 93%, transparent),
+    linear-gradient(to bottom, transparent, #000 7%, #000 93%, transparent);
+  -webkit-mask-composite: source-in;
+  mask-image:
+    linear-gradient(to right, transparent, #000 7%, #000 93%, transparent),
+    linear-gradient(to bottom, transparent, #000 7%, #000 93%, transparent);
+  mask-composite: intersect;
 }
 
 
@@ -430,10 +449,6 @@
     margin-top: 50px;
   }
 
-  .person-frame img {
-    height: 390px;
-  }
-
   .person h3 {
     font-size: 36px;
   }
@@ -547,13 +562,7 @@
   ------------------------------------------------------- */
 
   .person-frame img {
-    width: 100%;
-
-    height: 230px;
-
-    object-fit: cover;
-
-    object-position: center;
+    object-position: center center;
   }
 
 
@@ -755,15 +764,9 @@
     transform: translateX(4px);
   }
 
-
   /* -------------------------------------------------------
      PHOTOS
   ------------------------------------------------------- */
-
-  .person-frame img {
-    height: 205px;
-  }
-
 
   /* -------------------------------------------------------
      HEART
@@ -873,15 +876,9 @@
     transform: translateX(3px);
   }
 
-
   /* -------------------------------------------------------
      PHOTOS
   ------------------------------------------------------- */
-
-  .person-frame img {
-    height: 180px;
-  }
-
 
   /* -------------------------------------------------------
      HEART

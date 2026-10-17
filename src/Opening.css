@@ -10,6 +10,7 @@
   position: relative;
   display: flex;
   align-items: center;
+  align-items: safe center;
   justify-content: center;
   padding: 30px 20px;
   overflow: hidden;
@@ -182,7 +183,7 @@
 
   font-size: clamp(44px, 7vw, 76px);
   font-weight: 400;
-  font-style: italic;
+  font-style: normal;
   line-height: 0.98;
   letter-spacing: -1px;
 
@@ -205,7 +206,7 @@
   font-family: Georgia, "Times New Roman", serif;
   font-size: 0.82em;
   font-weight: 400;
-  font-style: italic;
+  font-style: normal;
 }
 
 /* =========================================================
@@ -721,10 +722,6 @@
 ========================================================= */
 
 @media (max-height: 700px) and (max-width: 600px) {
-  .opening {
-    align-items: flex-start;
-  }
-
   .opening-content {
     padding-top: 8px;
     padding-bottom: 8px;

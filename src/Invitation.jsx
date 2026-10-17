@@ -15,7 +15,7 @@ export default function Invitation() {
       <div className="invitation-content">
 
         <p className="ganesha-quote">
-          With blessings of Ganesha
+          With the blessings of Lord Ganesha
         </p>
 
         <p className="invitation-welcome">
