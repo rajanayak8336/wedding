@@ -70,7 +70,7 @@
 ========================================================= */
 
 .ganesha-container {
-  width: clamp(100px, 16vw, 170px);
+  width: clamp(120px, 19.2vw, 204px);
   aspect-ratio: 1 / 1;
   height: auto;
   flex-shrink: 0;
@@ -347,7 +347,7 @@
 ========================================================= */
 
 .opening-hint {
-  margin: 17px 0 0;
+  margin: 28px 0 0;
 
   color: #503522;
   font-family: Georgia, "Times New Roman", serif;
@@ -447,7 +447,7 @@
   }
 
   .ganesha-container {
-    width: 170px;
+    width: 204px;
     margin-bottom: 20px;
   }
 
@@ -471,7 +471,7 @@
   }
 
   .ganesha-container {
-    width: 145px;
+    width: 174px;
     margin-bottom: 16px;
   }
 
@@ -495,7 +495,7 @@
   }
 
   .ganesha-container {
-    width: 135px;
+    width: 162px;
     margin-bottom: 15px;
   }
 
@@ -544,7 +544,7 @@
   }
 
   .ganesha-container {
-    width: clamp(100px, 28vw, 125px);
+    width: clamp(120px, 33.6vw, 150px);
     aspect-ratio: 1 / 1;
     height: auto;
 
@@ -620,7 +620,7 @@
   }
 
   .opening-hint {
-    margin-top: 13px;
+    margin-top: 24px;
     font-size: clamp(11px, 3vw, 14px);
     letter-spacing: 1px;
     line-height: 1.6;
@@ -642,7 +642,7 @@
   }
 
   .ganesha-container {
-    width: 96px;
+    width: 115px;
     margin-bottom: 12px;
   }
 
@@ -690,7 +690,7 @@
   }
 
   .opening-hint {
-    margin-top: 11px;
+    margin-top: 21px;
     font-size: 10px;
     letter-spacing: 0.8px;
   }
@@ -707,7 +707,7 @@
   }
 
   .ganesha-container {
-    width: 76px;
+    width: 91px;
     margin-bottom: 8px;
   }
 
@@ -737,7 +737,7 @@
   }
 
   .opening-hint {
-    margin-top: 8px;
+    margin-top: 18px;
   }
 }
 
